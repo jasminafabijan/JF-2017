@@ -1,1 +1,55 @@
-something
+@import "../scss/_var.scss";
+
+$my-purple: #8d437f;
+$my-green: #a0c33f;
+
+body {
+  background: $white;
+}
+
+.navbar-fixed-top {
+  background-color: #fff;
+  height: 80px;
+
+  .container {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+
+.navbar .nav {
+  margin-top: -60px;
+
+  & > li {
+    float: left;
+
+    a {
+      color: $my-green;
+      cursor: pointer;
+    }
+  }
+}
+
+.gradient {
+  -webkit-background: linear-gradient(rgba(177, 75, 201, 0.95), rgba(141, 67, 127, 1));
+  -ms-background: linear-gradient(rgba(177, 75, 201, 0.95), rgba(141, 67, 127, 1));
+  -moz-background: linear-gradient(rgba(177, 75, 201, 0.95), rgba(141, 67, 127, 1));
+  -o-background: linear-gradient(rgba(177, 75, 201, 0.95), rgba(141, 67, 127, 1));
+  background: linear-gradient(rgba(177, 75, 201, 0.95), rgba(141, 67, 127, 1));
+}
+
+#leftSide {
+  width: 40%;
+  background-color: $my-purple;
+
+  .h-content {
+    top: 80px;
+    margin-top: 40px;
+  }
+}
+
+#rightSide {
+  width: 60%;
+  left: 40%;
+  top: 80px;
+}
