@@ -130,16 +130,22 @@ $( document ).ready(function() {
   $(function() {
 
     function showContent(e, element, navigation, info, img, close) {
-      var eventTarget = e.target.hash;
+        var eventTarget = e.target.hash;
+        var eventTargetLeft = eventTarget + "l";
       var imgSrc = $(e.target).parents('figure').children('img').attr('src');
 
       e.preventDefault();
       $(element).addClass('show');
 
       $(info).find('li').removeClass('is-visible');
-      $(info).find("li"+eventTarget).addClass('is-visible');
+      $(info).find("li" + eventTarget).addClass('is-visible');
 
-      $(navigation).siblings(".project_info").children('li'+eventTarget).find('img').attr('src', imgSrc);
+      $(eventTargetLeft).parent().children().find('li').removeClass('is-visible'); // clean left side
+      $(eventTargetLeft).addClass('is-visible'); // add visible for the new #
+      $(eventTargetLeft).addClass('show');
+      close.data('showContent', eventTargetLeft);
+
+      $(navigation).siblings(".project_info").children('li' + eventTarget).find('img').attr('src', imgSrc);
     }
 
     var projectContainerList = document.getElementsByClassName('project');
@@ -165,8 +171,9 @@ $( document ).ready(function() {
       });
 
       $('.close').on('click', function(e) {
-        e.preventDefault();
-        $(project).removeClass('show')
+          e.preventDefault();
+          $(closeButton.data('showContent')).removeClass('show');
+          $(project).removeClass('show')
       });
 
     });
