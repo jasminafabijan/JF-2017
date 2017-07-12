@@ -46,10 +46,29 @@ body {
     top: 80px;
     margin-top: 40px;
   }
+
+  .project_content {
+    display: none;
+  }
 }
 
 #rightSide {
   width: 60%;
   left: 40%;
   top: 80px;
+}
+
+.project .project_info {
+  width: 60%;
+  top: 80px;
+  left: 40%;
+
+  /*.project_description {
+    width: 40%;
+    background-color: $my-purple;
+  }
+
+  .project_content {
+    width: 60%;
+  }*/
 }

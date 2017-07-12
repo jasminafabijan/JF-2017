@@ -201,6 +201,13 @@ $( document ).ready(function() {
     }
   });
 
+  $(document).ready(function(){
+    if($("#rightSide .is-visible").length > 0)
+    {
+        $("#leftSide .project_content").show();
+    }
+  });
+
 
 /* ------------------------------------- */
 /* PhotoSwipe   ................... */
