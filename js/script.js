@@ -145,7 +145,7 @@ $( document ).ready(function() {
       $(eventTargetLeft).addClass('show');
       close.data('showContent', eventTargetLeft);
 
-      $(navigation).siblings(".project_info").children('li' + eventTarget).find('img').attr('src', imgSrc);
+      /*$(navigation).siblings(".project_info").children('li' + eventTarget).find('img').attr('src', imgSrc);*/
     }
 
     var projectContainerList = document.getElementsByClassName('project');
@@ -208,12 +208,6 @@ $( document ).ready(function() {
     }
   });
 
-  $(document).ready(function(){
-    if($("#rightSide .is-visible").length > 0)
-    {
-        $("#leftSide .project_content").show();
-    }
-  });
 
 
 /* ------------------------------------- */

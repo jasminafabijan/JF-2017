@@ -7,6 +7,26 @@ body {
   background: $white;
 }
 
+.margin-top-0 {
+  margin-top: 0 !important;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0 !important;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
 .navbar-fixed-top {
   background-color: #fff;
   height: 80px;
@@ -47,8 +67,22 @@ body {
     margin-top: 40px;
   }
 
-  .project_content {
+  .project_info li {
     display: none;
+
+    .project_content {
+      background-color: $my-purple;
+      margin-top: -400px;
+      height: 400px;
+
+      p {
+        font-size: 14px;
+      }
+
+      h4 {
+        font-size: 18px;
+      }
+    }
   }
 }
 
@@ -58,17 +92,21 @@ body {
   top: 80px;
 }
 
-.project .project_info {
-  width: 60%;
-  top: 80px;
-  left: 40%;
+.project {
 
-  /*.project_description {
-    width: 40%;
-    background-color: $my-purple;
+  .close {
+    background: $my-purple;
   }
 
-  .project_content {
+  .project_info {
     width: 60%;
-  }*/
+    top: 80px;
+    left: 40%;
+  }
+
+  .item .caption .view {
+    background-color: $my-purple;
+    width: auto;
+    line-height: 1.5;
+  }
 }
