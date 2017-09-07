@@ -57,14 +57,12 @@ body {
 
 #rightSide {
   width: 60%;
-  left: 40%;
-  top: 80px; }
+  left: 40%; }
 
 .project .close {
   background: #8d437f; }
 .project .project_info {
   width: 60%;
-  top: 80px;
   left: 40%; }
 .project .item .caption .view {
   background-color: #8d437f;
