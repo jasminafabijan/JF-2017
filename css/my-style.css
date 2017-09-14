@@ -7,8 +7,8 @@ body {
 .margin-bottom-0 {
   margin-bottom: 0 !important; }
 
-.margin-bottom-10 {
-  margin-bottom: 10px; }
+.margin-bottom-5 {
+  margin-bottom: 5px; }
 
 .margin-bottom-20 {
   margin-bottom: 20px; }
@@ -18,6 +18,22 @@ body {
 
 .margin-bottom-50 {
   margin-bottom: 50px; }
+
+.margin-right-0 {
+  margin-right: 0 !important; }
+
+.padding-left-0 {
+  padding-left: 0 !important; }
+
+p a {
+  color: #8d437f; }
+  p a:hover {
+    color: #8d437f;
+    opacity: 0.8;
+    cursor: pointer; }
+
+a.btn:hover {
+  opacity: 0.8 !important; }
 
 .navbar-fixed-top {
   background-color: #fff;
@@ -60,24 +76,64 @@ body {
       #leftSide .project_info li .project_content h4 {
         font-size: 18px; }
 
+.social_icons li i:hover {
+  color: #fff;
+  opacity: 0.7; }
+
 #rightSide {
   width: 60%;
   left: 40%; }
-  #rightSide .project .close {
-    background: #8d437f; }
-  #rightSide .project .project_info {
-    width: 60%;
-    left: 40%; }
-  #rightSide .project .item .caption .view {
-    background-color: #8d437f;
-    width: auto;
-    line-height: 1.5; }
-  #rightSide .project .project_info .project_content .img-holder {
-    margin-bottom: 100px; }
-    #rightSide .project .project_info .project_content .img-holder img {
+  #rightSide .project {
+    padding-bottom: 0; }
+    #rightSide .project .close {
+      background: #8d437f; }
+    #rightSide .project .project_info {
+      width: 60%;
+      left: 40%; }
+    #rightSide .project .item .caption .btn-sm {
+      background: #8d437f;
       width: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; }
-  #rightSide .project .project_info .project_content .img-shadow {
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25); }
+      line-height: 1.5; }
+      #rightSide .project .item .caption .btn-sm.btn-green {
+        background: #a0c33f; }
+    #rightSide .project .project_info .project_content .img-holder {
+      margin-bottom: 100px; }
+      #rightSide .project .project_info .project_content .img-holder img {
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+    #rightSide .project .project_info .project_content .img-shadow {
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25); }
+
+#contact {
+  background-color: #a0c33f; }
+  #contact h2, #contact p {
+    color: #fff; }
+  #contact p {
+    font-size: 18px;
+    font-weight: 600; }
+  #contact #contact_form .submit {
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    padding-top: 5px;
+    border: 2px solid #fff; }
+    #contact #contact_form .submit:hover {
+      border: 2px solid #8d437f;
+      background: #8d437f; }
+
+.about p {
+  font-size: 18px; }
+.about li {
+  color: #666666;
+  margin-bottom: 10px; }
+
+footer {
+  background: #a0c33f; }
+  footer .uppercase {
+    font-size: 11px;
+    margin-right: 20px; }
+  footer span {
+    font-size: 15px; }

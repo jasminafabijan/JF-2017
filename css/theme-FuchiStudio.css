@@ -8,37 +8,7 @@
 * Primary use   : Coming Soon
 
 Copyright (C) 2016 Coderare
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Table of contents]
 
-1. @Import & Reset
-2. Generic styles
-3. Home
-4. Quote
-5. Instagram Feeds
-6. Twitter Feeds
-7. Sider
-8. Project
-9. Portfolio
-10. Photo Swipe
-11. Clock
-12. Countdown
-13. About
-14. Review
-15. Pricing
-16. App
-17. Team
-18. Clients
-19. Subscribe form
-20. Contact Form
-21. Footer
-22. Dry styles
-23. Bootstrap styles
-24. Plugin styles
-25. Media Queries
-
--------------------------------------------------------------------*/
 /* ------------------------------------- */
 /* @Import & Reset  ................... */
 /* ------------------------------------- */
@@ -50,7 +20,8 @@ Copyright (C) 2016 Coderare
 @import url(photoswipe.css);
 @import url(default-skin/default-skin.css);
 @import url(jquery.mCustomScrollbar.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800");
+/*@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700');*/
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -90,7 +61,7 @@ table {
 /* Generic styles ................... */
 /* ------------------------------------- */
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.1em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -382,9 +353,9 @@ h6 {
         line-height: 30px;
         background: #7053C4;
         color: #fff;
-        font-size: 12px;
+        font-size: 13px;
         float: right;
-        font-weight: 600; }
+        font-weight: 700; }
     .project .item:hover .photo-details {
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
@@ -697,78 +668,6 @@ h6 {
       font-size: 2.2em; }
 
 /* ------------------------------------- */
-/* Review ................... */
-/* ------------------------------------- */
-#review {
-  width: 100%;
-  padding: 10% 8%;
-  background: #121619;
-  color: #fff; }
-  #review .customer-review {
-    text-align: center; }
-    #review .customer-review img {
-      max-width: 100px; }
-    #review .customer-review h6 {
-      font-weight: 600;
-      margin-top: 30px; }
-    #review .customer-review p {
-      margin-top: 10px;
-      color: rgba(255, 255, 255, 0.9);
-      font-weight: 300; }
-
-/* ------------------------------------- */
-/* Pricing ................... */
-/* ------------------------------------- */
-.pricing {
-  width: 100%;
-  padding: 10% 8%;
-  background: #121619;
-  color: #fff; }
-
-.offers ul {
-  display: inline-block;
-  padding: 20px 0; }
-.offers li {
-  padding: 5px 0;
-  font-size: .85em;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.7); }
-
-.price {
-  padding: 30px 15px;
-  text-align: center;
-  -webkit-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  border-radius: 3px;
-  cursor: pointer;
-  background-color: #7053C4;
-  float: right;
-  -webkit-box-shadow: 0px 2px 33px -6px rgba(0, 0, 0, 0.75);
-  -ms-box-shadow: 0px 2px 33px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 2px 33px -6px rgba(0, 0, 0, 0.75);
-  -o-box-shadow: 0px 2px 33px -6px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 2px 33px -6px rgba(0, 0, 0, 0.75); }
-  .price:hover {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    transform: translateY(-10px); }
-  .price .rate {
-    margin-top: -10px;
-    font-size: 2.5em;
-    font-weight: 400;
-    margin-bottom: 0; }
-    .price .rate::before {
-      content: '$';
-      font-size: .5em !important; }
-  .price p {
-    margin: 0 !important; }
-
-/* ------------------------------------- */
 /* App ................... */
 /* ------------------------------------- */
 .appContainer {
@@ -867,79 +766,6 @@ h6 {
     transform: translateY(0); }
 
 /* ------------------------------------- */
-/* Clients ................... */
-/* ------------------------------------- */
-.clients {
-  width: 100%;
-  padding: 10% 8%;
-  background: #121619; }
-  .clients .client {
-    text-align: center;
-    padding: 20px 0; }
-
-/* ------------------------------------- */
-/* Subscribe form ................... */
-/* ------------------------------------- */
-#subscribe {
-  width: 100%;
-  padding: 10% 8%;
-  background: #121619;
-  color: #fff;
-  -webkit-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
-
-#subscribe-form .input-email {
-  width: 55%;
-  background: #1d2328;
-  padding: 0px 20px;
-  -webkit-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  border-radius: 3px;
-  height: 44px;
-  border-style: none;
-  font-size: 1.2em;
-  font-weight: 500; }
-#subscribe-form .input-submit {
-  background: transparent;
-  color: #fff;
-  -webkit-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  height: 44px;
-  border: 2px solid #fff;
-  border-radius: 3px;
-  font-weight: 500;
-  float: right;
-  font-size: 1em;
-  width: 30%;
-  text-align: center; }
-  #subscribe-form .input-submit:hover:hover {
-    color: #fff;
-    background: #7053C4;
-    border-color: #7053C4; }
-#subscribe-form #subscribe-result {
-  -webkit-transform: translateY(15px);
-  -ms-transform: translateY(15px);
-  -moz-transform: translateY(15px);
-  -o-transform: translateY(15px);
-  transform: translateY(15px);
-  font-size: .8em;
-  color: #fff;
-  font-weight: 700; }
-#subscribe-form .subscribe-success {
-  color: #16a085 !important; }
-#subscribe-form .subscribe-error {
-  color: #DF1D37 !important; }
-
-/* ------------------------------------- */
 /* Contact Form ................... */
 /* ------------------------------------- */
 #contact {
@@ -966,17 +792,15 @@ h6 {
     width: 100%;
     height: 45px;
     border-radius: 3px;
-    color: #fff !important;
     -webkit-transition: 0.2s;
     -ms-transition: 0.2s;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
     font-weight: 600;
-    background: #1d2328;
-    color: #fff; }
+    background: #fff; }
     #contact_form .input-name:focus, #contact_form .input-email:focus, #contact_form .input-message:focus, #contact_form .submit:focus {
-      background: #121619; }
+      background: #fff; }
   #contact_form .input-message {
     height: 100px; }
   #contact_form .submit {
@@ -1023,7 +847,7 @@ footer {
   bottom: 0;
   display: table;
   width: 100%;
-  padding: 5%;
+  padding: 4% 5%;
   background: #121619;
   color: #fff; }
   footer p {
@@ -1321,7 +1145,7 @@ img {
 /* ------------------------------------- */
 @media only screen and (min-width: 2000px) {
   body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1.6em;
     line-height: 1.6; }
 
@@ -1418,7 +1242,7 @@ img {
       margin-top: -0.3125em; } }
 @media only screen and (min-width: 2500px) {
   body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 2em;
     line-height: 1.6; } }
 @media only screen and (max-width: 1600px) {
@@ -1454,7 +1278,7 @@ img {
     padding: 0; } }
 @media only screen and (max-width: 768px) {
   body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1em;
     line-height: 1.6; }
 
@@ -1471,7 +1295,7 @@ img {
     font-size: 1em; } }
 @media screen and (max-device-width: 740px) and (orientation: landscape) {
   body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 0.75em;
     line-height: 1.6; }
 
@@ -1535,7 +1359,7 @@ img {
     padding: 15px 0 !important; } }
 @media only screen and (max-width: 480px) {
   body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 0.75em;
     line-height: 1.6; }
 
@@ -1560,7 +1384,7 @@ img {
     padding: 15px 0 !important; } }
 @media only screen and (max-width: 320px) {
   body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 0.625em;
     line-height: 1.6; }
 
