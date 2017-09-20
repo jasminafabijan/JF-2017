@@ -26,10 +26,6 @@ p a {
 a.btn:hover {
   opacity: 0.8 !important; }
 
-p,
-.about li {
-  font-size: 16px; }
-
 .navbar-fixed-top {
   background-color: #fff;
   height: 80px; }
@@ -63,13 +59,15 @@ p,
     #leftSide .project_info li .project_content {
       background-color: #8d437f;
       margin-top: -400px;
-      height: 400px; }
-      #leftSide .project_info li .project_content p {
-        font-size: 14px; }
+      height: 500px; }
+      #leftSide .project_info li .project_content p strong {
+        /*font-size: 14px;*/
+        font-weight: 800; }
       #leftSide .project_info li .project_content h1 {
         margin-top: 45px; }
       #leftSide .project_info li .project_content h4 {
-        font-size: 18px; }
+        /*font-size: 18px;*/
+        font-weight: 300; }
 
 .social_icons li i:hover {
   color: #fff;
@@ -138,15 +136,21 @@ footer {
   footer .uppercase {
     font-size: 18px; }
   footer span {
-    font-size: 24px; } }
-@media only screen and (min-width: 2000px) {
+    font-size: 24px; }
+
+  #leftSide .project_info li .project_content {
+    margin-top: -600px; } }
+@media only screen and (min-width: 2000px) and (max-width: 2499px) {
   #rightSide .project .item .caption .btn-sm {
     line-height: 1.2; }
 
   footer .uppercase {
     font-size: 16px; }
   footer span {
-    font-size: 22px; } }
+    font-size: 22px; }
+
+  #leftSide .project_info li .project_content {
+    margin-top: -512px; } }
 @media only screen and (min-width: 1600px) and (max-width: 1999px) {
   #rightSide .project .item .caption .btn-sm {
     font-size: 14px;
@@ -167,6 +171,10 @@ footer {
   footer span {
     font-size: 18px; } }
 @media only screen and (max-width: 1599px) {
+  p,
+  .about li {
+    font-size: 16px; }
+
   #contact #contact_form .submit {
     font-size: 15px; } }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -176,6 +184,12 @@ footer {
 @media only screen and (min-width: 1026px) and (max-width: 1080px) {
   h2 {
     font-size: 28px; } }
+@media only screen and (min-width: 1025px) {
+  .small-view {
+    display: none; } }
+@media only screen and (max-width: 1024px) {
+  .small-view {
+    display: block; } }
 @media only screen and (max-width: 768px) {
   #contact_form div.text-area {
     padding-left: 0; } }

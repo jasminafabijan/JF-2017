@@ -41,11 +41,6 @@ a.btn:hover {
   opacity: 0.8 !important;
 }
 
-p,
-.about li {
-  font-size: 16px;
-}
-
 .navbar-fixed-top {
   background-color: #fff;
   height: 80px;
@@ -92,10 +87,11 @@ p,
     .project_content {
       background-color: $my-purple;
       margin-top: -400px;
-      height: 400px;
+      height: 500px;
 
-      p {
-        font-size: 14px;
+      p strong {
+        /*font-size: 14px;*/
+        font-weight: 800;
       }
 
       h1 {
@@ -103,7 +99,8 @@ p,
       }
 
       h4 {
-        font-size: 18px;
+        /*font-size: 18px;*/
+        font-weight: 300;
       }
     }
   }
@@ -227,9 +224,13 @@ footer {
       font-size: 24px;
     }
   }
+
+  #leftSide .project_info li .project_content {
+    margin-top: -600px;
+  }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2000px) and (max-width: 2499px) {
 
   #rightSide .project .item .caption .btn-sm {
     line-height: 1.2;
@@ -244,6 +245,10 @@ footer {
     span {
       font-size: 22px;
     }
+  }
+
+  #leftSide .project_info li .project_content {
+    margin-top: -512px;
   }
 }
 
@@ -281,6 +286,11 @@ footer {
 
 @media only screen and (max-width: 1599px) {
 
+  p,
+  .about li {
+    font-size: 16px;
+  }
+
   #contact #contact_form .submit {
     font-size: 15px;
   }
@@ -298,6 +308,20 @@ footer {
 
   h2 {
     font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  .small-view {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .small-view {
+    display: block;
   }
 }
 
