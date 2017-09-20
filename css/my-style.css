@@ -10,15 +10,6 @@ body {
 .margin-bottom-5 {
   margin-bottom: 5px; }
 
-.margin-bottom-20 {
-  margin-bottom: 20px; }
-
-.margin-bottom-30 {
-  margin-bottom: 30px; }
-
-.margin-bottom-50 {
-  margin-bottom: 50px; }
-
 .margin-right-0 {
   margin-right: 0 !important; }
 
@@ -100,13 +91,11 @@ p,
       line-height: 1.5; }
       #rightSide .project .item .caption .btn-sm.btn-green {
         background: #a0c33f; }
-    #rightSide .project .project_info .project_content .img-holder {
-      margin-bottom: 100px; }
-      #rightSide .project .project_info .project_content .img-holder img {
-        width: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto; }
+    #rightSide .project .project_info .project_content .img-holder img {
+      width: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
     #rightSide .project .project_info .project_content .img-shadow {
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25); }
 

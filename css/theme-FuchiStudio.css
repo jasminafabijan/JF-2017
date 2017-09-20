@@ -1169,13 +1169,6 @@ img {
       font-size: 0.75em;
       font-weight: 500; }
 
-  #subscribe-form .input-email {
-    font-size: 1em;
-    padding: 0px 20px;
-    height: 2.75em; }
-  #subscribe-form .input-submit {
-    height: 2.75em; }
-
   #contact_form {
     font-size: 0.875em; }
     #contact_form div {
@@ -1193,13 +1186,8 @@ img {
     padding: 0 0.3125em;
     margin: 0.625em 0; }
     #form-messages .success, #form-messages .error {
-      font-size: 0.75em; }
-
-  .launch-date {
-    height: 10em; }
-    .launch-date h2 {
-      margin-bottom: -0.3125em;
-      margin-top: -0.3125em; } }
+      font-size: 0.75em; } }
+      
 @media only screen and (min-width: 2500px) {
   body {
     font-family: "Nunito", sans-serif;
