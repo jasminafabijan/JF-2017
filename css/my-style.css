@@ -35,6 +35,10 @@ p a {
 a.btn:hover {
   opacity: 0.8 !important; }
 
+p,
+.about li {
+  font-size: 16px; }
+
 .navbar-fixed-top {
   background-color: #fff;
   height: 80px; }
@@ -111,12 +115,12 @@ a.btn:hover {
   #contact h2, #contact p {
     color: #fff; }
   #contact p {
-    font-size: 18px;
+    /*font-size: 18px;*/
     font-weight: 600; }
   #contact #contact_form .submit {
     background: transparent;
     color: #fff;
-    font-size: 16px;
+    /*font-size: 16px;*/
     font-weight: 800;
     padding-top: 5px;
     border: 2px solid #fff; }
@@ -125,7 +129,7 @@ a.btn:hover {
       background: #8d437f; }
 
 .about p {
-  font-size: 18px; }
+  /*font-size: 18px;*/ }
 .about li {
   color: #666666;
   margin-bottom: 10px; }
@@ -137,3 +141,52 @@ footer {
     margin-right: 20px; }
   footer span {
     font-size: 15px; }
+
+@media only screen and (min-width: 2500px) {
+  #contact #contact_form .submit {
+    padding-top: 10px; }
+
+  footer .uppercase {
+    font-size: 18px; }
+  footer span {
+    font-size: 24px; } }
+@media only screen and (min-width: 2000px) {
+  #rightSide .project .item .caption .btn-sm {
+    line-height: 1.2; }
+
+  footer .uppercase {
+    font-size: 16px; }
+  footer span {
+    font-size: 22px; } }
+@media only screen and (min-width: 1600px) and (max-width: 1999px) {
+  #rightSide .project .item .caption .btn-sm {
+    font-size: 14px;
+    line-height: 1.2; }
+
+  p,
+  .about li {
+    font-size: 20px; }
+
+  h3 {
+    font-size: 26px; }
+
+  #contact #contact_form .submit {
+    font-size: 16px; }
+
+  footer .uppercase {
+    font-size: 14px; }
+  footer span {
+    font-size: 18px; } }
+@media only screen and (max-width: 1599px) {
+  #contact #contact_form .submit {
+    font-size: 15px; } }
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  p,
+  .about li {
+    font-size: 18px; } }
+@media only screen and (min-width: 1026px) and (max-width: 1080px) {
+  h2 {
+    font-size: 28px; } }
+@media only screen and (max-width: 768px) {
+  #contact_form div.text-area {
+    padding-left: 0; } }
