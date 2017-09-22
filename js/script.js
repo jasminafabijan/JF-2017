@@ -164,8 +164,10 @@ $( document ).ready(function() {
         $(infoTab).prepend(img);
       }  appendAndPrepend(projectInfo, projectImg, closeButton);
 
-      $(projectNavigation).on('click', function(event) {
-        if ( event.target.tagName.toLowerCase() === 'a' ) {
+      $(projectNavigation).on('click', function (event) {
+          var node$ = $(event.target);
+          var attr = node$.attr('href');
+        if ( event.target.tagName.toLowerCase() === 'a' && attr.startsWith('#')) {
           showContent(event, project, projectNavigation, projectInfo, projectImg, closeButton);
         }
       });
