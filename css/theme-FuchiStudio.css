@@ -1062,14 +1062,6 @@ a {
     outline: none !important;
     text-decoration: none; }
 
-::-moz-selection {
-  color: #fff;
-  background: #7053C4 !important; }
-
-::selection {
-  color: #fff;
-  background: #7053C4 !important; }
-
 img {
   max-width: 100%;
   vertical-align: middle; }
