@@ -1,54 +1,42 @@
 <?php
-    // My modifications to mailer script from:
-    // http://blog.teamtreehouse.com/create-ajax-contact-form
-    // Added input sanitizing to prevent injection
+              require 'PHPMailerAutoload.php';
 
-    // Only process POST reqeusts.
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the form fields and remove whitespace.
-        $name = strip_tags(trim($_POST["name"]));
-				$name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $message = trim($_POST["message"]);
+              if ( isset($_REQUEST['submitButton']) )
+              {
+                  $name = $_REQUEST['name'];
+                  $email = $_REQUEST['email'];
+                  $message = $_REQUEST['message'];
 
-        // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
-            exit;
-        }
+                  if ($name == '' || $email == '' || $message == '') {
+                    echo '<div class="error-message">You must fill in name, email and message.</div>';
+                  } else {
 
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "jf@jasminafabijan.com";
+                    $mail = new PHPMailer;
 
-        // Set the email subject.
-        $subject = "You have a message from $name";
+                    $mail->isSMTP();                                      // Set mailer to use SMTP
+                    $mail->Host = 'smtp.jasminafabijan.com';                       // Specify main and backup server
+                    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+                    $mail->Username = 'webmaster@jasminafabijan.com';            // SMTP username
+                    $mail->Password = 'jadran2012';                       // SMTP password
+                    $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
+                    //$mail->SMTPDebug = 1;
 
-        // Build the email content.
-        $email_content = "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
-        $email_content .= "Message:\n$message\n";
+                    $mail->From = 'webmaster@jasminafabijan.com';
+                    $mail->FromName = 'jasminafabijan.com';
+                    $mail->addAddress('darko@renderedtext.com');           // Name is optional
+                    $mail->addReplyTo($email, $name);
 
-        // Build the email headers.
-        $email_headers = "From: $name <$email>";
 
-        // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo "Thank You! Your message has been sent.";
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
-        }
+                    $mail->Subject = 'RFP: ' . $job_type;
+                    $mail->Body    = $message;
 
-    } else {
-        // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
-    }
+                    if(!$mail->send()) {
+                       echo '<div class="error-message">Message could not be sent. Mailer Error: ' . $mail->ErrorInfo . '</div>';
+                       exit;
+                    } else {
+                      echo '<div class="success-message">Message has been sent. Thank you! I will respond shortly.</div>';
+                    }
 
-?>
+                  }
+              }
+            ?>

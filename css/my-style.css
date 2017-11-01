@@ -69,9 +69,11 @@ a.btn:hover {
         /*font-size: 18px;*/
         font-weight: 300; }
 
-.social_icons li i:hover {
-  color: #fff;
-  opacity: 0.7; }
+.social_icons {
+  margin-left: -15px; }
+  .social_icons li i:hover {
+    color: #fff;
+    opacity: 0.7; }
 
 #rightSide {
   width: 60%;
@@ -102,12 +104,10 @@ a.btn:hover {
   #contact h2, #contact p {
     color: #fff; }
   #contact p {
-    /*font-size: 18px;*/
     font-weight: 600; }
   #contact #contact_form .submit {
     background: transparent;
     color: #fff;
-    /*font-size: 16px;*/
     font-weight: 800;
     padding-top: 5px;
     border: 2px solid #fff; }
@@ -115,8 +115,16 @@ a.btn:hover {
       border: 2px solid #8d437f;
       background: #8d437f; }
 
-.about p {
-  /*font-size: 18px;*/ }
+.form-message {
+  color: #fff;
+  font-weight: 700;
+  position: absolute; }
+  .form-message.error {
+    color: #DF1D37;
+    font-size: 12px; }
+  .form-message.success {
+    font-size: 16px; }
+
 .about li {
   color: #666666;
   margin-bottom: 10px; }
@@ -205,6 +213,13 @@ footer {
 @media only screen and (max-width: 768px) {
   #contact_form div.text-area {
     padding-left: 0; } }
+@media only screen and (min-width: 517px) and (max-width: 740px) {
+  /*#contact_form div.text-area {
+    padding-left: 0;
+  }*/ }
+@media screen and (max-device-width: 740px) and (orientation: landscape) {
+  #leftSide .h-content {
+    top: 0; } }
 @media only screen and (max-width: 450px) {
   h3 {
     font-size: 18px; }
