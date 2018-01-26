@@ -1,5 +1,5 @@
 body {
-  background: white; }
+  background: #fff; }
 
 .margin-top-0 {
   margin-top: 0 !important; }
@@ -85,6 +85,8 @@ a.btn:hover {
     #rightSide .project .project_info {
       width: 60%;
       left: 40%; }
+    #rightSide .project .figcaption {
+      cursor: default; }
     #rightSide .project .item .caption .btn-sm {
       background: #8d437f;
       width: auto;
@@ -213,10 +215,6 @@ footer {
 @media only screen and (max-width: 768px) {
   #contact_form div.text-area {
     padding-left: 0; } }
-@media only screen and (min-width: 517px) and (max-width: 740px) {
-  /*#contact_form div.text-area {
-    padding-left: 0;
-  }*/ }
 @media screen and (max-device-width: 740px) and (orientation: landscape) {
   #leftSide .h-content {
     top: 0; } }
@@ -237,3 +235,5 @@ footer {
 
   footer span.custom {
     display: block; } }
+
+/*# sourceMappingURL=my-style.css.map */

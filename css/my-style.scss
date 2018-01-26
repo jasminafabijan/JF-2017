@@ -131,6 +131,10 @@ a.btn:hover {
       left: 40%;
     }
 
+    .figcaption {
+      cursor: default;
+    }
+
     .item .caption {
 
       .btn-sm {
@@ -363,13 +367,6 @@ footer {
   #contact_form div.text-area {
     padding-left: 0;
   }
-}
-
-@media only screen and (min-width: 517px) and (max-width: 740px) {
-
-  /*#contact_form div.text-area {
-    padding-left: 0;
-  }*/
 }
 
 @media screen and (max-device-width: 740px) and (orientation: landscape) {
