@@ -136,6 +136,7 @@ $( document ).ready(function() {
 
       e.preventDefault();
       $(element).addClass('show');
+      $(document.body).addClass('project-open');
 
       $(info).find('li').removeClass('is-visible');
       $(info).find("li" + eventTarget).addClass('is-visible');
@@ -175,7 +176,8 @@ $( document ).ready(function() {
       $('.close').on('click', function(e) {
           e.preventDefault();
           $(closeButton.data('showContent')).removeClass('show');
-          $(project).removeClass('show')
+          $(project).removeClass('show');
+          $(document.body).removeClass('project-open');
       });
 
     });
